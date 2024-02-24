@@ -1,0 +1,473 @@
+﻿<UserControl
+    x:Class="SuperM3UI_Nav.View.Video"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ViewModel="clr-namespace:SuperM3UI_Nav.ViewModel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:ipc="clr-namespace:IntruderLeather.Controls.IpAddress;assembly=IpControl"
+    xmlns:local="clr-namespace:SuperM3UI_Nav.View"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+    d:DesignHeight="550"
+    d:DesignWidth="800"
+    Style="{StaticResource Page_Style}"
+    mc:Ignorable="d">
+    <Grid Margin="15,30,15,15">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60*" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="50*" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10*" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Border
+                    BorderBrush="White"
+                    BorderThickness="2"
+                    CornerRadius="20">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                            <GradientStop Offset="1" Color="#FF060D38" />
+                            <GradientStop Offset="0" Color="#FF0C68B4" />
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50*" />
+                            <ColumnDefinition Width="50*" />
+                            <ColumnDefinition Width="50*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="45" />
+                                <RowDefinition Height="50*" />
+                                <RowDefinition Height="50*" />
+                                <RowDefinition Height="50*" />
+                                <RowDefinition Height="50*" />
+                                <RowDefinition Height="50*" />
+                                <RowDefinition Height="5" />
+                            </Grid.RowDefinitions>
+                            <TextBlock
+                                Margin="18,10,0,0"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Top"
+                                FontWeight="ExtraBlack"
+                                Foreground="Cyan"
+                                Style="{StaticResource Text_Style}"
+                                Text="Graphics" />
+                            <TextBlock
+                                Grid.Row="1"
+                                Margin="30,0,0,8"
+                                VerticalAlignment="Bottom"
+                                Style="{StaticResource Text_Toggle}"
+                                Text="Resolution:" />
+                            <ComboBox
+                                x:Name="cb_Resolution"
+                                Grid.Row="1"
+                                Width="135"
+                                Height="25"
+                                Margin="118,10,0,0"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                FontFamily="Microsoft JhengHei UI"
+                                FontSize="16"
+                                FontWeight="ExtraBlack"
+                                SelectionChanged="cb_Resolution_SelectionChanged"
+                                Style="{StaticResource roundComboBox}" />
+                            <TextBlock
+                                Grid.Row="2"
+                                Style="{StaticResource Text_Toggle}"
+                                Text="Full Screen:" />
+                            <CheckBox
+                                x:Name="ts_FullScreen"
+                                Grid.Row="2"
+                                Checked="ts_FullScreen_Checked"
+                                Style="{StaticResource tgNew}"
+                                Unchecked="ts_FullScreen_Unchecked" />
+                            <TextBlock
+                                Grid.Row="3"
+                                Style="{StaticResource Text_Toggle}"
+                                Text="Wide Screen :" />
+                            <CheckBox
+                                x:Name="ts_WideScreen"
+                                Grid.Row="3"
+                                Checked="ts_WideScreen_Checked"
+                                Style="{StaticResource tgNew}"
+                                Unchecked="ts_WideScreen_Unchecked" />
+                            <TextBlock
+                                Grid.Row="4"
+                                Style="{StaticResource Text_Toggle}"
+                                Text="Wide Background :" />
+                            <CheckBox
+                                x:Name="ts_WideBG"
+                                Grid.Row="4"
+                                Checked="ts_WideBG_Checked"
+                                Style="{StaticResource tgNew}"
+                                Unchecked="ts_WideBG_Unchecked" />
+                            <TextBlock
+                                Grid.Row="5"
+                                Style="{StaticResource Text_Toggle}"
+                                Text="Vsync :" />
+                            <CheckBox
+                                x:Name="ts_Vsync"
+                                Grid.Row="5"
+                                Checked="ts_Vsync_Checked"
+                                Style="{StaticResource tgNew}"
+                                Unchecked="ts_Vsync_Unchecked" />
+                        </Grid>
+                        <Grid Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="45" />
+                                <RowDefinition Height="50*" />
+                                <RowDefinition Height="50*" />
+                                <RowDefinition Height="50*" />
+                                <RowDefinition Height="50*" />
+                                <RowDefinition Height="50*" />
+                                <RowDefinition Height="10" />
+                            </Grid.RowDefinitions>
+                            <TextBlock
+                                Grid.Row="1"
+                                Margin="30,0,0,0"
+                                VerticalAlignment="Center"
+                                Style="{StaticResource Text_Toggle}"
+                                Text="PowerPC Frequency :" />
+                            <xctk:MaskedTextBox
+                                x:Name="tb_PPCFreq"
+                                Grid.Row="1"
+                                Width="40"
+                                Margin="195,0,0,0"
+                                Padding="0"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                FontSize="16"
+                                Mask="00"
+                                Style="{StaticResource roundTextBox}"
+                                TextAlignment="Center"
+                                TextChanged="tb_PPCFreq_TextChanged" />
+                            <TextBlock
+                                Grid.Row="2"
+                                VerticalAlignment="Center"
+                                Style="{StaticResource Text_Toggle}"
+                                Text="True Hz :" />
+                            <CheckBox
+                                x:Name="ts_TrueHz"
+                                Grid.Row="2"
+                                Checked="ts_TrueHz_Checked"
+                                Style="{StaticResource tgNew}"
+                                Unchecked="ts_TrueHz_Unchecked" />
+                            <TextBlock
+                                Grid.Row="3"
+                                Style="{StaticResource Text_Toggle}"
+                                Text="Stretch :" />
+                            <CheckBox
+                                x:Name="ts_Stretch"
+                                Grid.Row="3"
+                                Checked="ts_Stretch_Checked"
+                                Style="{StaticResource tgNew}"
+                                Unchecked="ts_Stretch_Unchecked" />
+                            <TextBlock
+                                Grid.Row="4"
+                                Style="{StaticResource Text_Toggle}"
+                                Text="Throttle :" />
+                            <CheckBox
+                                x:Name="ts_Throttle"
+                                Grid.Row="4"
+                                Checked="ts_Throttle_Checked"
+                                Style="{StaticResource tgNew}"
+                                Unchecked="ts_Throttle_Unchecked" />
+                            <TextBlock
+                                Grid.Row="5"
+                                Style="{StaticResource Text_Toggle}"
+                                Text="ShowFrameRate :" />
+                            <CheckBox
+                                x:Name="ts_ShowFR"
+                                Grid.Row="5"
+                                Checked="ts_ShowFR_Checked"
+                                Style="{StaticResource tgNew}"
+                                Unchecked="ts_ShowFR_Unchecked" />
+                        </Grid>
+                        <Grid Grid.Column="2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="45" />
+                                <RowDefinition Height="50*" />
+                                <RowDefinition Height="50*" />
+                                <RowDefinition Height="50*" />
+                                <RowDefinition Height="50*" />
+                                <RowDefinition Height="50*" />
+                                <RowDefinition Height="10" />
+                            </Grid.RowDefinitions>
+                            <TextBlock
+                                Grid.Row="1"
+                                Margin="30,0,0,8"
+                                VerticalAlignment="Bottom"
+                                Style="{StaticResource Text_Toggle}"
+                                Text="New 3D Engine :" />
+                            <CheckBox
+                                x:Name="ts_New3D"
+                                Grid.Row="1"
+                                Checked="ts_New3D_Checked"
+                                Style="{StaticResource tgNew}"
+                                Unchecked="ts_New3D_Unchecked" />
+                            <TextBlock
+                                Grid.Row="2"
+                                Style="{StaticResource Text_Toggle}"
+                                Text="GPU Multi Threaded :" />
+                            <CheckBox
+                                x:Name="ts_GPUMT"
+                                Grid.Row="2"
+                                Checked="ts_GPUMT_Checked"
+                                Style="{StaticResource tgNew}"
+                                Unchecked="ts_GPUMT_Unchecked" />
+                            <TextBlock
+                                Grid.Row="3"
+                                Style="{StaticResource Text_Toggle}"
+                                Text="Quad Rendering :" />
+                            <CheckBox
+                                x:Name="ts_QuadR"
+                                Grid.Row="3"
+                                Checked="ts_QuadR_Checked"
+                                Style="{StaticResource tgNew}"
+                                Unchecked="ts_QuadR_Unchecked" />
+                            <TextBlock
+                                Grid.Row="4"
+                                Style="{StaticResource Text_Toggle}"
+                                Text="Multi Threaded :" />
+                            <CheckBox
+                                x:Name="ts_MultiThread"
+                                Grid.Row="4"
+                                Checked="ts_MultiThread_Checked"
+                                Style="{StaticResource tgNew}"
+                                Unchecked="ts_MultiThread_Unchecked" />
+                            <TextBlock
+                                Grid.Row="5"
+                                Style="{StaticResource Text_Toggle}"
+                                Text="Multi Texture :" />
+                            <CheckBox
+                                x:Name="ts_MultiTexture"
+                                Grid.Row="5"
+                                Checked="ts_MultiTexture_Checked"
+                                Style="{StaticResource tgNew}"
+                                Unchecked="ts_MultiTexture_Unchecked" />
+                        </Grid>
+                    </Grid>
+                </Border>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="50*" />
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Border
+                        BorderBrush="White"
+                        BorderThickness="2"
+                        CornerRadius="20">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                <GradientStop Offset="1" Color="#FF350B4F" />
+                                <GradientStop Offset="0" Color="#5722C0" />
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="45" />
+                                    <RowDefinition Height="50*" />
+                                    <RowDefinition Height="50*" />
+                                    <RowDefinition Height="50*" />
+                                    <RowDefinition Height="50*" />
+                                    <RowDefinition Height="50*" />
+                                    <RowDefinition Height="10" />
+                                </Grid.RowDefinitions>
+                                <TextBlock
+                                    Grid.Row="0"
+                                    Margin="18,10,0,0"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    FontWeight="ExtraBlack"
+                                    Foreground="Cyan"
+                                    Style="{StaticResource Text_Style}"
+                                    Text="Sound" />
+                                <TextBlock
+                                    Grid.Row="1"
+                                    Style="{StaticResource Text_Toggle}"
+                                    Text="Emulate Sound :" />
+                                <CheckBox
+                                    x:Name="ts_EmuSound"
+                                    Grid.Row="1"
+                                    Checked="ts_EmuSound_Checked"
+                                    Style="{StaticResource tgNew}"
+                                    Unchecked="ts_EmuSound_Unchecked" />
+                                <TextBlock
+                                    Grid.Row="2"
+                                    Style="{StaticResource Text_Toggle}"
+                                    Text="Emulate DSB :" />
+                                <CheckBox
+                                    x:Name="ts_EmuDSB"
+                                    Grid.Row="2"
+                                    Checked="ts_EmuDSB_Checked"
+                                    Style="{StaticResource tgNew}"
+                                    Unchecked="ts_EmuDSB_Unchecked" />
+                                <TextBlock
+                                    Grid.Row="3"
+                                    Style="{StaticResource Text_Toggle}"
+                                    Text="Legacy Sound DSP :" />
+                                <CheckBox
+                                    x:Name="ts_LegacySDSP"
+                                    Grid.Row="3"
+                                    Checked="ts_LegacySDSP_Checked"
+                                    Style="{StaticResource tgNew}"
+                                    Unchecked="ts_LegacySDSP_Unchecked" />
+                                <TextBlock
+                                    Grid.Row="4"
+                                    Style="{StaticResource Text_Toggle}"
+                                    Text="Flip Stereo :" />
+                                <CheckBox
+                                    x:Name="ts_FlipStereo"
+                                    Grid.Row="4"
+                                    Checked="ts_FlipStereo_Checked"
+                                    Style="{StaticResource tgNew}"
+                                    Unchecked="ts_FlipStereo_Unchecked" />
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Border
+                        BorderBrush="White"
+                        BorderThickness="2"
+                        CornerRadius="20">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                <GradientStop Offset="1" Color="#FF0D211E" />
+                                <GradientStop Offset="0" Color="#FF025856" />
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="45" />
+                                    <RowDefinition Height="50*" />
+                                    <RowDefinition Height="50*" />
+                                    <RowDefinition Height="50*" />
+                                    <RowDefinition Height="50*" />
+                                    <RowDefinition Height="50*" />
+                                    <RowDefinition Height="10" />
+                                </Grid.RowDefinitions>
+                                <TextBlock
+                                    Grid.Row="0"
+                                    Margin="18,10,0,0"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    FontWeight="ExtraBlack"
+                                    Foreground="Cyan"
+                                    Style="{StaticResource Text_Style}"
+                                    Text="Network" />
+                                <TextBlock
+                                    Grid.Row="1"
+                                    Style="{StaticResource Text_Toggle}"
+                                    Text="Network :" />
+                                <CheckBox
+                                    x:Name="ts_Network"
+                                    Grid.Row="1"
+                                    Margin="165,0,0,0"
+                                    HorizontalAlignment="Left"
+                                    Checked="ts_Network_Checked"
+                                    Style="{StaticResource tgNew}"
+                                    Unchecked="ts_Network_Unchecked" />
+                                <TextBlock
+                                    Grid.Row="2"
+                                    Style="{StaticResource Text_Toggle}"
+                                    Text="Simulate Net :" />
+                                <CheckBox
+                                    x:Name="ts_SimNet"
+                                    Grid.Row="2"
+                                    Margin="165,0,0,0"
+                                    HorizontalAlignment="Left"
+                                    Checked="ts_SimNet_Checked"
+                                    Style="{StaticResource tgNew}"
+                                    Unchecked="ts_SimNet_Unchecked" />
+                                <TextBlock
+                                    Grid.Row="3"
+                                    Style="{StaticResource Text_Toggle}"
+                                    Text="Port In :" />
+                                <xctk:MaskedTextBox
+                                    x:Name="tb_PortIn"
+                                    Grid.Row="3"
+                                    Width="85"
+                                    Margin="165,0,0,0"
+                                    Padding="8,0,8,0"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Center"
+                                    FontSize="16"
+                                    IsUndoEnabled="True"
+                                    Mask="0000"
+                                    Style="{StaticResource roundTextBox}"
+                                    TextAlignment="Center"
+                                    TextChanged="tb_PortIn_TextChanged" />
+                                <TextBlock
+                                    Grid.Row="4"
+                                    Style="{StaticResource Text_Toggle}"
+                                    Text="Port Out :" />
+                                <xctk:MaskedTextBox
+                                    x:Name="tb_PortOut"
+                                    Grid.Row="4"
+                                    Width="85"
+                                    Margin="165,0,0,0"
+                                    Padding="8,0,8,0"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Center"
+                                    FontSize="16"
+                                    IsUndoEnabled="True"
+                                    Mask="0000"
+                                    Style="{StaticResource roundTextBox}"
+                                    TextAlignment="Center"
+                                    TextChanged="tb_PortOut_TextChanged" />
+                                <TextBlock
+                                    Grid.Row="5"
+                                    Style="{StaticResource Text_Toggle}"
+                                    Text="IP Address :" />
+                                <ipc:IpControl
+                                    x:Name="tb_IPAddr"
+                                    Grid.Row="5"
+                                    Width="150"
+                                    Margin="165,0,0,0"
+                                    Padding="8,0,8,0"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Center"
+                                    Background="White"
+                                    FontSize="16"
+                                    IPV6="False"
+                                    Style="{StaticResource roundTextBox}"
+                                    TextAlignment="Center"
+                                    TextChanged="tb_IPAddr_TextChanged" />
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="4">
+                <Button
+                    x:Name="btnSetControl"
+                    Grid.Row="2"
+                    Width="320"
+                    Height="40"
+                    Click="btnSetControl_Click"
+                    Content="Config Inputs (Command Prompt)"
+                    FontSize="16"
+                    FontWeight="ExtraBlack"
+                    Style="{StaticResource RoundButton2}" />
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

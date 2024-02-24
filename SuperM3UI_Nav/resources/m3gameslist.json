@@ -1,0 +1,560 @@
+[
+  {
+    "id": 1,
+    "favoriate": 0,
+    "Games": "Daytona USA 2- Battle on Edge",
+    "rom": "daytona2",
+    "version": "Japan, Revision A",
+    "is_rom": 1,
+    "movie": "dayto2pe.mp4"
+  },
+  {
+    "id": 2,
+    "favoriate": 0,
+    "Games": "Daytona USA 2- Power Edition",
+    "rom": "dayto2pe",
+    "version": "Japan",
+    "is_rom": 1,
+    "movie": "dayto2pe.mp4"
+  },
+  {
+    "id": 3,
+    "favoriate": 0,
+    "Games": "Dirt Devils",
+    "rom": "dirtdvls",
+    "version": "Export, Revision A",
+    "is_rom": 0,
+    "movie": "dirtdvls.mp4"
+  },
+  {
+    "id": 4,
+    "favoriate": 0,
+    "Games": "Dirt Devils",
+    "rom": "dirtdvlsu",
+    "version": "USA, Revision A",
+    "is_rom": 0,
+    "movie": "dirtdvls.mp4"
+  },
+  {
+    "id": 5,
+    "favoriate": 0,
+    "Games": "Dirt Devils",
+    "rom": "dirtdvlsau",
+    "version": "Australia, Revision A",
+    "is_rom": 0,
+    "movie": "dirtdvls.mp4"
+  },
+  {
+    "id": 6,
+    "favoriate": 0,
+    "Games": "Dirt Devils",
+    "rom": "dirtdvlsj",
+    "version": "Japan, Revision A",
+    "is_rom": 0,
+    "movie": "dirtdvls.mp4"
+  },
+  {
+    "id": 7,
+    "favoriate": 0,
+    "Games": "Dirt Devils",
+    "rom": "dirtdvlsg",
+    "version": "Export, Ver. G ?",
+    "is_rom": 0,
+    "movie": "dirtdvls.mp4"
+  },
+  {
+    "id": 8,
+    "favoriate": 0,
+    "Games": "Emergency Call Ambulance",
+    "rom": "eca",
+    "version": "Export",
+    "is_rom": 0,
+    "movie": "eca.mp4"
+  },
+  {
+    "id": 9,
+    "favoriate": 0,
+    "Games": "Emergency Call Ambulance",
+    "rom": "ecap",
+    "version": "US, location test ?",
+    "is_rom": 0,
+    "movie": "eca.mp4"
+  },
+  {
+    "id": 10,
+    "favoriate": 0,
+    "Games": "Emergency Call Ambulance",
+    "rom": "ecau",
+    "version": "USA",
+    "is_rom": 0,
+    "movie": "eca.mp4"
+  },
+  {
+    "id": 11,
+    "favoriate": 0,
+    "Games": "Emergency Call Ambulance",
+    "rom": "ecaj",
+    "version": "Japan",
+    "is_rom": 0,
+    "movie": "eca.mp4"
+  },
+  {
+    "id": 12,
+    "favoriate": 1,
+    "Games": "Fighting Vipers 2",
+    "rom": "fvipers2",
+    "version": "Japan, Revision A",
+    "is_rom": 1,
+    "movie": "fvipers2.mp4"
+  },
+  {
+    "id": 13,
+    "favoriate": 1,
+    "Games": "Fighting Vipers 2",
+    "rom": "fvipers2o",
+    "version": "?",
+    "is_rom": 0,
+    "movie": "fvipers2.mp4"
+  },
+  {
+    "id": 14,
+    "favoriate": 0,
+    "Games": "Harley Davidson & L.A. Riders",
+    "rom": "harley",
+    "version": "Export, Revision B",
+    "is_rom": 0,
+    "movie": "harley.mp4"
+  },
+  {
+    "id": 15,
+    "favoriate": 0,
+    "Games": "Harley Davidson & L.A. Riders",
+    "rom": "harleya",
+    "version": "Export, Revision A",
+    "is_rom": 0,
+    "movie": "harley.mp4"
+  },
+  {
+    "id": 16,
+    "favoriate": 0,
+    "Games": "Le Mans 24",
+    "rom": "lemans24",
+    "version": "Japan, Revision B",
+    "is_rom": 0,
+    "movie": "lemans24.mp4"
+  },
+  {
+    "id": 17,
+    "favoriate": 0,
+    "Games": "L.A. Machineguns",
+    "rom": "lamachin",
+    "version": "Japan",
+    "is_rom": 0,
+    "movie": "lamachin.mp4"
+  },
+  {
+    "id": 18,
+    "favoriate": 0,
+    "Games": "Magical Truck Adventure",
+    "rom": "magtruck",
+    "version": "Japan",
+    "is_rom": 0,
+    "movie": "magtruck.mp4"
+  },
+  {
+    "id": 19,
+    "favoriate": 0,
+    "Games": "Magical Truck Adventure",
+    "rom": "mgtrkbad",
+    "version": "Japan",
+    "is_rom": 0,
+    "movie": "magtruck.mp4"
+  },
+  {
+    "id": 20,
+    "favoriate": 0,
+    "Games": "Scud Race",
+    "rom": "scud",
+    "version": "Export, Twin/DX",
+    "is_rom": 0,
+    "movie": "scudp.mp4"
+  },
+  {
+    "id": 21,
+    "favoriate": 0,
+    "Games": "Scud Race",
+    "rom": "scudau",
+    "version": "Australia, Twin/DX",
+    "is_rom": 0,
+    "movie": "scudp.mp4"
+  },
+  {
+    "id": 22,
+    "favoriate": 0,
+    "Games": "Scud Race",
+    "rom": "scuddx",
+    "version": "Export, Deluxe, Revision A",
+    "is_rom": 0,
+    "movie": "scudp.mp4"
+  },
+  {
+    "id": 23,
+    "favoriate": 0,
+    "Games": "Scud Race Plus",
+    "rom": "scudplus",
+    "version": "Export, Twin/DX, Revision A",
+    "is_rom": 0,
+    "movie": "scudp.mp4"
+  },
+  {
+    "id": 24,
+    "favoriate": 0,
+    "Games": "Scud Race Plus",
+    "rom": "scudplusa",
+    "version": "Export, Twin/DX",
+    "is_rom": 0,
+    "movie": "scudp.mp4"
+  },
+  {
+    "id": 25,
+    "favoriate": 1,
+    "Games": "Sega Bass Fishing",
+    "rom": "bassdx",
+    "version": "USA, Delux",
+    "is_rom": 0,
+    "movie": "bass.mp4"
+  },
+  {
+    "id": 26,
+    "favoriate": 0,
+    "Games": "Get Bass: Sega Bass Fishing",
+    "rom": "getbassdx",
+    "version": "Japan, Delux",
+    "is_rom": 0,
+    "movie": "bass.mp4"
+  },
+  {
+    "id": 27,
+    "favoriate": 0,
+    "Games": "Get Bass: Sega Bass Fishing",
+    "rom": "getbassur",
+    "version": "Japan, Upright",
+    "is_rom": 0,
+    "movie": "bass.mp4"
+  },
+  {
+    "id": 28,
+    "favoriate": 0,
+    "Games": "Get Bass: Sega Bass Fishing",
+    "rom": "getbass",
+    "version": "Japan, Standard",
+    "is_rom": 1,
+    "movie": "bass.mp4"
+  },
+  {
+    "id": 29,
+    "favoriate": 1,
+    "Games": "Sega Rally 2",
+    "rom": "srally2",
+    "version": "Export",
+    "is_rom": 1,
+    "movie": "srally2.mp4"
+  },
+  {
+    "id": 30,
+    "favoriate": 0,
+    "Games": "Sega Rally 2",
+    "rom": "srally2p",
+    "version": "Prototype",
+    "is_rom": 0,
+    "movie": "srally2.mp4"
+  },
+  {
+    "id": 31,
+    "favoriate": 0,
+    "Games": "Sega Rally 2",
+    "rom": "srally2pa",
+    "version": "Prototype, Revision A",
+    "is_rom": 0,
+    "movie": "srally2.mp4"
+  },
+  {
+    "id": 32,
+    "favoriate": 0,
+    "Games": "Sega Rally 2",
+    "rom": "srally2dx",
+    "version": "Export, Deluxe",
+    "is_rom": 0,
+    "movie": "srally2.mp4"
+  },
+  {
+    "id": 33,
+    "favoriate": 0,
+    "Games": "Ski Champ",
+    "rom": "skichamp",
+    "version": "Japan",
+    "is_rom": 0,
+    "movie": "skichamp.mp4"
+  },
+  {
+    "id": 34,
+    "favoriate": 1,
+    "Games": "Spikeout: Final Edition",
+    "rom": "spikeofe",
+    "version": "Export, Revision C",
+    "is_rom": 1,
+    "movie": "spikeout.mp4"
+  },
+  {
+    "id": 35,
+    "favoriate": 1,
+    "Games": "Spikeout",
+    "rom": "spikeout",
+    "version": "Export",
+    "is_rom": 1,
+    "movie": "spikeofe.mp4"
+  },
+  {
+    "id": 36,
+    "favoriate": 0,
+    "Games": "Star Wars Trilogy Arcade",
+    "rom": "swtrilgy",
+    "version": "Export, Revision A",
+    "is_rom": 1,
+    "movie": "swtrilgy.mp4"
+  },
+  {
+    "id": 37,
+    "favoriate": 0,
+    "Games": "Star Wars Trilogy Arcade",
+    "rom": "swtrilgya",
+    "version": "Export",
+    "is_rom": 0,
+    "movie": "swtrilgy.mp4"
+  },
+  {
+    "id": 38,
+    "favoriate": 0,
+    "Games": "Star Wars Trilogy Arcade",
+    "rom": "swtrilgyp",
+    "version": "Location test 16.09.98",
+    "is_rom": 0,
+    "movie": "swtrilgy.mp4"
+  },
+  {
+    "id": 39,
+    "favoriate": 0,
+    "Games": "The Lost World: Jurassic Park",
+    "rom": "lostwsga",
+    "version": "Japan, Revision A",
+    "is_rom": 1,
+    "movie": "lostwsga.mp4"
+  },
+  {
+    "id": 40,
+    "favoriate": 0,
+    "Games": "The Lost World: Jurassic Park Special",
+    "rom": "lostwsgp",
+    "version": "Location test",
+    "is_rom": 0,
+    "movie": "lostwsga.mp4"
+  },
+  {
+    "id": 41,
+    "favoriate": 0,
+    "Games": "The Ocean Hunter",
+    "rom": "oceanhun",
+    "version": "Japan, Revision A",
+    "is_rom": 0,
+    "movie": "oceanhun.mp4"
+  },
+  {
+    "id": 42,
+    "favoriate": 0,
+    "Games": "The Ocean Hunter",
+    "rom": "oceanhuna",
+    "version": "Japan",
+    "is_rom": 0,
+    "movie": "oceanhun.mp4"
+  },
+  {
+    "id": 43,
+    "favoriate": 1,
+    "Games": "Virtua Fighter 3: Team Battle",
+    "rom": "vf3tb",
+    "version": "Japan",
+    "is_rom": 1,
+    "movie": "vf3.mp4"
+  },
+  {
+    "id": 44,
+    "favoriate": 0,
+    "Games": "Virtua Fighter 3",
+    "rom": "vf3",
+    "version": "Japan, Revision D",
+    "is_rom": 1,
+    "movie": "vf3.mp4"
+  },
+  {
+    "id": 45,
+    "favoriate": 0,
+    "Games": "Virtua Fighter 3",
+    "rom": "vf3c",
+    "version": "Japan, Revision C",
+    "is_rom": 0,
+    "movie": "vf3.mp4"
+  },
+  {
+    "id": 46,
+    "favoriate": 0,
+    "Games": "Virtua Fighter 3",
+    "rom": "vf3a",
+    "version": "Japan, Revision A",
+    "is_rom": 1,
+    "movie": "vf3.mp4"
+  },
+  {
+    "id": 47,
+    "favoriate": 0,
+    "Games": "Virtua Striker 2",
+    "rom": "vs2",
+    "version": "Step 2.0, Export, USA",
+    "is_rom": 0,
+    "movie": "vs2.mp4"
+  },
+  {
+    "id": 48,
+    "favoriate": 0,
+    "Games": "Virtua Striker 2",
+    "rom": "vs215",
+    "version": "Step 1.5, Export, USA",
+    "is_rom": 0,
+    "movie": "vs2.mp4"
+  },
+  {
+    "id": 49,
+    "favoriate": 0,
+    "Games": "Virtua Striker 2",
+    "rom": "vs215o",
+    "version": "Step 1.5, Japan (test ?)",
+    "is_rom": 0,
+    "movie": "vs2.mp4"
+  },
+  {
+    "id": 50,
+    "favoriate": 0,
+    "Games": "Virtua Striker 2 '98",
+    "rom": "vs298",
+    "version": "Step 2.0, Japan",
+    "is_rom": 0,
+    "movie": "vs2.mp4"
+  },
+  {
+    "id": 51,
+    "favoriate": 0,
+    "Games": "Virtua Striker 2 '98",
+    "rom": "vs29815",
+    "version": "Step 1.5, Japan",
+    "is_rom": 0,
+    "movie": "vs2.mp4"
+  },
+  {
+    "id": 52,
+    "favoriate": 0,
+    "Games": "Virtua Striker 2 '99",
+    "rom": "vs299a",
+    "version": "Export, USA, Revision A",
+    "is_rom": 0,
+    "movie": "vs2.mp4"
+  },
+  {
+    "id": 53,
+    "favoriate": 0,
+    "Games": "Virtua Striker 2 '99",
+    "rom": "vs299",
+    "version": "Export, USA",
+    "is_rom": 0,
+    "movie": "vs2.mp4"
+  },
+  {
+    "id": 54,
+    "favoriate": 0,
+    "Games": "Virtua Striker 2 '99",
+    "rom": "vs29915a",
+    "version": "Step1.5, Export, USA",
+    "is_rom": 0,
+    "movie": "vs2.mp4"
+  },
+  {
+    "id": 55,
+    "favoriate": 0,
+    "Games": "Virtua Striker 2 '99.1",
+    "rom": "vs2v991",
+    "version": "Export, USA, Revision B",
+    "is_rom": 0,
+    "movie": "vs2.mp4"
+  },
+  {
+    "id": 56,
+    "favoriate": 0,
+    "Games": "Virtua Striker 2 '99.1",
+    "rom": "vs299j",
+    "version": "Japan, Revision B",
+    "is_rom": 0,
+    "movie": "vs2.mp4"
+  },
+  {
+    "id": 57,
+    "favoriate": 0,
+    "Games": "Virtua Striker 2 '99.1",
+    "rom": "vs29915",
+    "version": "Step1.5, Export, USA, Revision B",
+    "is_rom": 0,
+    "movie": "vs2.mp4"
+  },
+  {
+    "id": 58,
+    "favoriate": 0,
+    "Games": "Virtua Striker 2 '99.1",
+    "rom": "vs29915j",
+    "version": "Step1.5, Japan, Revision B",
+    "is_rom": 0,
+    "movie": "vs2.mp4"
+  },
+  {
+    "id": 59,
+    "favoriate": 0,
+    "Games": "Cyber Troopers Virtual-On OT",
+    "rom": "von2",
+    "version": "Japan, Revision B",
+    "is_rom": 0,
+    "movie": "von2.mp4"
+  },
+  {
+    "id": 60,
+    "favoriate": 0,
+    "Games": "Cyber Troopers Virtual-On OT",
+    "rom": "von254g",
+    "version": "Japan, Ver. 5.4g",
+    "is_rom": 0,
+    "movie": "von2.mp4"
+  },
+  {
+    "id": 61,
+    "favoriate": 0,
+    "Games": "Cyber Troopers Virtual-On OT",
+    "rom": "von2a",
+    "version": "Japan, Revision A",
+    "is_rom": 0,
+    "movie": "von2.mp4"
+  },
+  {
+    "id": 62,
+    "favoriate": 0,
+    "Games": "Cyber Troopers Virtual-On OT",
+    "rom": "von2o",
+    "version": "Japan",
+    "is_rom": 0,
+    "movie": "von2.mp4"
+  }
+]

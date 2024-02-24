@@ -1,0 +1,923 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>SuperM3UI_Nav</RootNamespace>
+    <Nullable>disable</Nullable>
+    <UseWPF>true</UseWPF>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseWindowsForms>True</UseWindowsForms>
+    <Platforms>AnyCPU;x64</Platforms>
+    <StartupObject>SuperM3UI_Nav.App</StartupObject>
+    <PackageIcon>superm3-logo.ico</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Config\Games.xml" />
+    <None Remove="Config\Supermodel.ini" />
+    <None Remove="Fonts\Rubik-Medium.ttf" />
+    <None Remove="Fonts\Rubik-Regular.ttf" />
+    <None Remove="icons\baseline_favorite_black_24dp.png" />
+    <None Remove="icons\baseline_favorite_border_black_24dp.png" />
+    <None Remove="icons\baseline_favorite_red_24dp.png" />
+    <None Remove="icons\baseline_group_white_24dp.png" />
+    <None Remove="icons\baseline_home_white_24dp.png" />
+    <None Remove="icons\baseline_lan_white_24dp.png" />
+    <None Remove="icons\baseline_menu_white_24dp.png" />
+    <None Remove="icons\baseline_personal_video_white_24dp.png" />
+    <None Remove="icons\baseline_sports_esports_white_24dp.png" />
+    <None Remove="icons\baseline_videogame_asset_white_24dp.png" />
+    <None Remove="icons\baseline_volume_up_white_24dp.png" />
+    <None Remove="icons\button_black-g_press.png" />
+    <None Remove="icons\button_black-y_press.png" />
+    <None Remove="icons\button_blue.png" />
+    <None Remove="icons\button_blue_press.png" />
+    <None Remove="icons\button_green-removebg-preview.png" />
+    <None Remove="icons\button_green.png" />
+    <None Remove="icons\button_green_press.png" />
+    <None Remove="icons\button_pink.png" />
+    <None Remove="icons\button_pink_press.png" />
+    <None Remove="icons\button_red.png" />
+    <None Remove="icons\button_red_press.png" />
+    <None Remove="icons\ControlGreen.png" />
+    <None Remove="icons\HomeGreen.png" />
+    <None Remove="icons\joystick_panel.png" />
+    <None Remove="icons\joystick_panel_color.png" />
+    <None Remove="icons\joystick_panel_new.png" />
+    <None Remove="icons\joystick_setup_common.png" />
+    <None Remove="icons\joystick_setup_fight.png" />
+    <None Remove="icons\joystick_setup_fight2.png" />
+    <None Remove="icons\joystick_setup_fight_P1.png" />
+    <None Remove="icons\joystick_setup_fight_P2.png" />
+    <None Remove="icons\joystick_setup_spike.png" />
+    <None Remove="icons\joystick_setup_spike_2.png" />
+    <None Remove="icons\joystick_setup_vs2_P1.png" />
+    <None Remove="icons\joystick_setup_vs2_P2.png" />
+    <None Remove="icons\menu_FILL0_wght400_GRAD0_opsz24.png" />
+    <None Remove="icons\NetworkGreen.png" />
+    <None Remove="icons\null.png" />
+    <None Remove="icons\open-folder.png" />
+    <None Remove="icons\shutdown_def.png" />
+    <None Remove="icons\shutdown_mo.png" />
+    <None Remove="icons\SoundGreen.png" />
+    <None Remove="icons\sticks-ball-large.png" />
+    <None Remove="icons\sticks-ball-mid.png" />
+    <None Remove="icons\sticks-ball.png" />
+    <None Remove="icons\sticks-removebg-preview.png" />
+    <None Remove="icons\superm3-logo.png" />
+    <None Remove="icons\TestGreen.png" />
+    <None Remove="icons\VideoGreen.png" />
+    <None Remove="Images\ControlGreen.png" />
+    <None Remove="Images\customer_page.png" />
+    <None Remove="Images\HomeGreen.png" />
+    <None Remove="Images\home_page.png" />
+    <None Remove="Images\img_customer.png" />
+    <None Remove="Images\img_home.png" />
+    <None Remove="Images\img_order.png" />
+    <None Remove="Images\img_product.png" />
+    <None Remove="Images\img_setting.png" />
+    <None Remove="Images\img_shipment.png" />
+    <None Remove="Images\img_transaction.png" />
+    <None Remove="Images\NetworkGreen.png" />
+    <None Remove="Images\order_page.png" />
+    <None Remove="Images\product_page.png" />
+    <None Remove="Images\setting_page.png" />
+    <None Remove="Images\shipment_page.png" />
+    <None Remove="Images\shutdown_def.png" />
+    <None Remove="Images\shutdown_mo.png" />
+    <None Remove="Images\SoundGreen.png" />
+    <None Remove="Images\TestGreen.png" />
+    <None Remove="Images\transaction_page.png" />
+    <None Remove="Images\VideoGreen.png" />
+    <None Remove="NVRAM\spikeofe-master.nv" />
+    <None Remove="NVRAM\spikeofe-single.nv" />
+    <None Remove="NVRAM\spikeofe-slave.nv" />
+    <None Remove="resources\m3gameslist - 複製 %282%29.json" />
+    <None Remove="resources\m3gameslist - 複製.json" />
+    <None Remove="resources\m3gameslist.json" />
+    <None Remove="resources\readme.html" />
+    <None Remove="resources\readme.rtf" />
+    <None Remove="resources\readme.txt" />
+    <None Remove="resources\spikeofe-master.nv" />
+    <None Remove="resources\spikeofe-single.nv" />
+    <None Remove="resources\spikeofe-slave.nv" />
+    <None Remove="resources\Supermodel.ini" />
+    <None Remove="resources\~%24readme.rtf" />
+    <None Remove="snaps\bassdx-c.png" />
+    <None Remove="snaps\bassdx.jpg" />
+    <None Remove="snaps\dayto2pe-c.png" />
+    <None Remove="snaps\dayto2pe.jpg" />
+    <None Remove="snaps\daytona2-c.png" />
+    <None Remove="snaps\daytona2.jpg" />
+    <None Remove="snaps\daytona22.jpg" />
+    <None Remove="snaps\dirtdvls-c.png" />
+    <None Remove="snaps\dirtdvls.jpg" />
+    <None Remove="snaps\dirtdvlsa.jpg" />
+    <None Remove="snaps\dirtdvlsau-c.png" />
+    <None Remove="snaps\dirtdvlsau.jpg" />
+    <None Remove="snaps\dirtdvlsg-c.png" />
+    <None Remove="snaps\dirtdvlsg.jpg" />
+    <None Remove="snaps\dirtdvlsj-c.png" />
+    <None Remove="snaps\dirtdvlsj.jpg" />
+    <None Remove="snaps\dirtdvlsu-c.png" />
+    <None Remove="snaps\dirtdvlsu.jpg" />
+    <None Remove="snaps\eca-c.png" />
+    <None Remove="snaps\eca.jpg" />
+    <None Remove="snaps\ecaj-c.png" />
+    <None Remove="snaps\ecaj.jpg" />
+    <None Remove="snaps\ecap-c.png" />
+    <None Remove="snaps\ecap.jpg" />
+    <None Remove="snaps\ecau-c.png" />
+    <None Remove="snaps\ecau.jpg" />
+    <None Remove="snaps\fvipers2-c.png" />
+    <None Remove="snaps\fvipers2.jpg" />
+    <None Remove="snaps\fvipers2o-c.png" />
+    <None Remove="snaps\fvipers2o.jpg" />
+    <None Remove="snaps\getbass-c.png" />
+    <None Remove="snaps\getbass.jpg" />
+    <None Remove="snaps\getbassdx-c.png" />
+    <None Remove="snaps\getbassdx.jpg" />
+    <None Remove="snaps\getbassur-c.png" />
+    <None Remove="snaps\getbassur.jpg" />
+    <None Remove="snaps\harley-c.png" />
+    <None Remove="snaps\harley.jpg" />
+    <None Remove="snaps\harleya-c.png" />
+    <None Remove="snaps\harleya.jpg" />
+    <None Remove="snaps\lamachin-c.png" />
+    <None Remove="snaps\lamachin.jpg" />
+    <None Remove="snaps\lemans24-c.png" />
+    <None Remove="snaps\lemans24.jpg" />
+    <None Remove="snaps\lostwsga-c.png" />
+    <None Remove="snaps\lostwsga.jpg" />
+    <None Remove="snaps\lostwsgp-c.png" />
+    <None Remove="snaps\lostwsgp.jpg" />
+    <None Remove="snaps\magtruck-c.png" />
+    <None Remove="snaps\magtruck.jpg" />
+    <None Remove="snaps\mgtrkbad-c.png" />
+    <None Remove="snaps\mgtrkbad.jpg" />
+    <None Remove="snaps\oceanhun-c.png" />
+    <None Remove="snaps\oceanhun.jpg" />
+    <None Remove="snaps\oceanhun.png" />
+    <None Remove="snaps\oceanhuna-c.png" />
+    <None Remove="snaps\oceanhuna.jpg" />
+    <None Remove="snaps\scud-c.png" />
+    <None Remove="snaps\scud.jpg" />
+    <None Remove="snaps\scudau-c.png" />
+    <None Remove="snaps\scudau.jpg" />
+    <None Remove="snaps\scuddx-c.png" />
+    <None Remove="snaps\scuddx.jpg" />
+    <None Remove="snaps\scudplus-c.png" />
+    <None Remove="snaps\scudplus.jpg" />
+    <None Remove="snaps\scudplusa-c.png" />
+    <None Remove="snaps\scudplusa.jpg" />
+    <None Remove="snaps\skichamp-c.png" />
+    <None Remove="snaps\skichamp.jpg" />
+    <None Remove="snaps\spikeofe-c.png" />
+    <None Remove="snaps\spikeofe.jpg" />
+    <None Remove="snaps\spikeout-c.png" />
+    <None Remove="snaps\spikeout.jpg" />
+    <None Remove="snaps\srally2-c.png" />
+    <None Remove="snaps\srally2.jpg" />
+    <None Remove="snaps\srally2dx-c.png" />
+    <None Remove="snaps\srally2dx.jpg" />
+    <None Remove="snaps\srally2p-c.png" />
+    <None Remove="snaps\srally2p.jpg" />
+    <None Remove="snaps\srally2pa-c.png" />
+    <None Remove="snaps\srally2pa.jpg" />
+    <None Remove="snaps\srally2x.jpg" />
+    <None Remove="snaps\superm3-logo.png" />
+    <None Remove="snaps\swtrilgy-c.png" />
+    <None Remove="snaps\swtrilgy.jpg" />
+    <None Remove="snaps\swtrilgya-c.png" />
+    <None Remove="snaps\swtrilgya.jpg" />
+    <None Remove="snaps\swtrilgyp-c.png" />
+    <None Remove="snaps\swtrilgyp.jpg" />
+    <None Remove="snaps\vf3-c.png" />
+    <None Remove="snaps\vf3.jpg" />
+    <None Remove="snaps\vf3a-c.png" />
+    <None Remove="snaps\vf3a.jpg" />
+    <None Remove="snaps\vf3c-c.png" />
+    <None Remove="snaps\vf3c.jpg" />
+    <None Remove="snaps\vf3tb-c.png" />
+    <None Remove="snaps\vf3tb.jpg" />
+    <None Remove="snaps\von2-c.png" />
+    <None Remove="snaps\von2.jpg" />
+    <None Remove="snaps\von254g-c.png" />
+    <None Remove="snaps\von254g.jpg" />
+    <None Remove="snaps\von2a-c.png" />
+    <None Remove="snaps\von2a.jpg" />
+    <None Remove="snaps\von2o-c.png" />
+    <None Remove="snaps\von2o.jpg" />
+    <None Remove="snaps\vs2-c.png" />
+    <None Remove="snaps\vs2.jpg" />
+    <None Remove="snaps\vs215-c.png" />
+    <None Remove="snaps\vs215.jpg" />
+    <None Remove="snaps\vs215o-c.png" />
+    <None Remove="snaps\vs215o.jpg" />
+    <None Remove="snaps\vs298-c.png" />
+    <None Remove="snaps\vs298.jpg" />
+    <None Remove="snaps\vs29815-c.png" />
+    <None Remove="snaps\vs29815.jpg" />
+    <None Remove="snaps\vs299-c.png" />
+    <None Remove="snaps\vs299.jpg" />
+    <None Remove="snaps\vs29915-c.png" />
+    <None Remove="snaps\vs29915.jpg" />
+    <None Remove="snaps\vs29915a-c.png" />
+    <None Remove="snaps\vs29915a.jpg" />
+    <None Remove="snaps\vs29915j-c.png" />
+    <None Remove="snaps\vs29915j.jpg" />
+    <None Remove="snaps\vs299a-c.png" />
+    <None Remove="snaps\vs299a.jpg" />
+    <None Remove="snaps\vs299b.jpg" />
+    <None Remove="snaps\vs299j-c.png" />
+    <None Remove="snaps\vs299j.jpg" />
+    <None Remove="snaps\vs2v2991-c.png" />
+    <None Remove="snaps\vs2v991.jpg" />
+    <None Remove="View\1ur3puhz.ccn~" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\Rubik-Medium.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Rubik-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Config\Games.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\Supermodel.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\baseline_favorite_black_24dp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\baseline_favorite_border_black_24dp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\baseline_favorite_red_24dp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\baseline_group_white_24dp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\baseline_home_white_24dp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\baseline_lan_white_24dp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\baseline_menu_white_24dp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\baseline_personal_video_white_24dp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\baseline_sports_esports_white_24dp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\baseline_videogame_asset_white_24dp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\baseline_volume_up_white_24dp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\button_black-g_press.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\button_black-y_press.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\button_blue.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\button_blue_press.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\button_green-removebg-preview.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\button_green.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\button_green_press.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\button_pink.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\button_pink_press.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\button_red.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\button_red_press.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\ControlGreen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\HomeGreen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\joystick_panel.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\joystick_panel_color.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\joystick_panel_new.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\joystick_setup_common.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\joystick_setup_fight.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\joystick_setup_fight2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\joystick_setup_fight_P1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\joystick_setup_fight_P2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\joystick_setup_spike.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\joystick_setup_spike_2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\joystick_setup_vs2_P1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\joystick_setup_vs2_P2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\menu_FILL0_wght400_GRAD0_opsz24.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\NetworkGreen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\null.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\open-folder.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\shutdown_def.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\shutdown_mo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\SoundGreen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\sticks-ball-large.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\sticks-ball-mid.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\sticks-ball.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\sticks-removebg-preview.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\superm3-logo.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\superm3-logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\TestGreen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\VideoGreen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\ControlGreen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\HomeGreen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\img_setting.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\NetworkGreen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\shutdown_def.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\shutdown_mo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\SoundGreen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\TestGreen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGreen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\m3gameslist.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\readme.rtf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\spikeofe-master.nv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\spikeofe-single.nv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\spikeofe-slave.nv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\Supermodel.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\bassdx-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\bassdx.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\dayto2pe-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\dayto2pe.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\daytona2-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\daytona2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\daytona22.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\dirtdvls-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\dirtdvls.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\dirtdvlsa.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\dirtdvlsau-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\dirtdvlsau.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\dirtdvlsg-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\dirtdvlsg.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\dirtdvlsj-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\dirtdvlsj.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\dirtdvlsu-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\dirtdvlsu.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\eca-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\eca.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\ecaj-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\ecaj.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\ecap-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\ecap.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\ecau-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\ecau.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\fvipers2-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\fvipers2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\fvipers2o-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\fvipers2o.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\getbass-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\getbass.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\getbassdx-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\getbassdx.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\getbassur-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\getbassur.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\harley-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\harley.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\harleya-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\harleya.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\lamachin-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\lamachin.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\lemans24-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\lemans24.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\lostwsga-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\lostwsga.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\lostwsgp-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\lostwsgp.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\magtruck-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\magtruck.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\mgtrkbad-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\mgtrkbad.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\oceanhun-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\oceanhun.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\oceanhun.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\oceanhuna-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\oceanhuna.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\scud-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\scud.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\scudau-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\scudau.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\scuddx-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\scuddx.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\scudplus-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\scudplus.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\scudplusa-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\scudplusa.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\skichamp-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\skichamp.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\spikeofe-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\spikeofe.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\spikeout-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\spikeout.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\srally2-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\srally2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\srally2dx-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\srally2dx.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\srally2p-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\srally2p.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\srally2pa-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\srally2pa.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\srally2x.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\superm3-logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\swtrilgy-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\swtrilgy.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\swtrilgya-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\swtrilgya.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\swtrilgyp-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\swtrilgyp.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vf3-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vf3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vf3a-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vf3a.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vf3c-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vf3c.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vf3tb-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vf3tb.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\von2-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\von2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\von254g-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\von254g.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\von2a-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\von2a.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\von2o-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\von2o.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs2-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs215-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs215.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs215o-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs215o.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs298-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs298.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs29815-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs29815.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs299-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs299.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs29915-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs29915.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs29915a-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs29915a.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs29915j-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs29915j.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs299a-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs299a.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs299b.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs299j-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs299j.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs2v2991-c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snaps\vs2v991.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.6.0" />
+    <PackageReference Include="IpControl" Version="1.0.2" />
+    <PackageReference Include="MahApps.Metro" Version="3.0.0-alpha0476" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="SharpDX.DirectInput" Version="4.2.0" />
+    <PackageReference Include="SharpDX.XInput" Version="4.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="icons\superm3-logo.ico">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Movies\bass.mp4">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Movies\dayto2pe.mp4">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Movies\dirtdvls.mp4">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Movies\eca.mp4">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Movies\fvipers2.mp4">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Movies\harley.mp4">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Movies\lamachin.mp4">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Movies\lemans24.mp4">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Movies\lostwsga.mp4">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Movies\magtruck.mp4">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Movies\oceanhun.mp4">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Movies\scudp.mp4">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Movies\skichamp.mp4">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Movies\spikeofe.mp4">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Movies\spikeout.mp4">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Movies\srally2.mp4">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Movies\swtrilgy.mp4">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Movies\vf3.mp4">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Movies\von2.mp4">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Movies\vs2.mp4">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="NVRAM\" />
+  </ItemGroup>
+
+</Project>

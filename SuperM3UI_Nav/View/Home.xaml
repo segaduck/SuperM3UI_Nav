@@ -1,0 +1,136 @@
+﻿<UserControl
+             x:Class="SuperM3UI_Nav.View.Home"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:SuperM3UI_Nav.View"
+             xmlns:Utilities="clr-namespace:SuperM3UI_Nav.Utilities" 
+             mc:Ignorable="d"
+    d:DesignHeight="550"
+    d:DesignWidth="800"
+             Style="{StaticResource Page_Style}">
+
+    <Grid Background="#212529">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.6*"/>
+            <ColumnDefinition Width="0.4*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.06*"/>
+                <RowDefinition Height="0.05*"/>
+                <RowDefinition Height="0.01*"/>
+                <RowDefinition Height="0.80*"/>
+                <RowDefinition Height="0.10*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock x:Name="msgBox" Grid.Row="0" FontSize="26" Foreground="Gold"
+                       HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock x:Name="verBox" Grid.Row="1" FontSize="22" Foreground="HotPink"
+                       HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBlock Grid.Row="2" FontSize="16" />
+
+            <Grid Grid.Row="3" >
+                <Border BorderThickness="1" BorderBrush="#ff3d3d3d" CornerRadius="5"/>
+                <Grid>
+                    <Border Name="mask" Background="#33000000" CornerRadius="4"/>
+                    <DataGrid x:Name="RridGameLists"                             
+                      ItemsSource="{Binding}"
+                      MouseDoubleClick="RridGameLists_MouseDoubleClick"
+                      SelectionChanged="RridGameLists_SelectionChanged"
+                      Style="{StaticResource RoundedDataGrid}"
+                      RowStyle="{StaticResource rowStyle}" 
+                      CellStyle="{StaticResource cellStyle}" >
+                        <DataGrid.ColumnHeaderStyle>
+                            <Style TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="Height" Value="30"/>
+                                <Setter Property="Background" Value="Transparent" />
+                            </Style>
+                        </DataGrid.ColumnHeaderStyle>
+
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="id" Binding="{Binding id}" Width="10" Visibility="Hidden"/>
+                            <DataGridTemplateColumn Header="" Width="40">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Image Width="20" Height="20">
+                                            <Image.Style>
+                                                <Style TargetType="{x:Type Image}">
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding favoriate}" Value="1">
+                                                            <Setter Property="Source" Value="/icons/baseline_favorite_red_24dp.png"/>
+                                                        </DataTrigger>
+                                                        <DataTrigger Binding="{Binding favoriate}" Value="0">
+                                                            <Setter Property="Source" Value="/icons/null.png"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Image.Style>
+                                        </Image>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+
+                            <DataGridTextColumn Header="Games" Binding="{Binding Games}" Width="100*"/>
+                            <DataGridTextColumn Header="rom" Binding="{Binding rom}" Width="100"/>
+                            <DataGridTextColumn Header="version" Binding="{Binding version}" Width="0.4*" Visibility="Hidden"/>
+                            <DataGridTextColumn Header="is_rom" Binding="{Binding is_rom}" Width="*" Visibility="Hidden" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.55*"/>
+                    <ColumnDefinition Width="0.25*"/>
+                    <ColumnDefinition Width="0.05*"/>
+                    <ColumnDefinition Width="0.75*"/>
+                    <ColumnDefinition Width="0.25*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" VerticalAlignment="Center" 
+                           HorizontalAlignment="Right" Margin="0,0,0,0" 
+                           Text="Favoriate Only" FontSize="18" Foreground="White"/>
+                <CheckBox 
+                    x:Name="ts_favoriateOnly"  
+                    Style="{StaticResource tgNew}"
+                    HorizontalAlignment="Left"
+                    Grid.Column="1" 
+                    Margin="10,0,0,0"
+                    Checked="ts_favoriateOnly_Checked"               
+                    Unchecked="ts_favoriateOnly_Unchecked"
+                 />
+                <TextBlock Grid.Column="3" VerticalAlignment="Center" 
+                           HorizontalAlignment="Right" Margin="0,0,10,0" 
+                           Text="Avaliable Roms Only" FontSize="18" Foreground="White"/>
+                <CheckBox
+                    x:Name="ts_IsRomOnly"  
+                    HorizontalAlignment="Left"
+                    Grid.Column="4" 
+                    Margin="0,0,0,0"
+                    Checked="ts_IsRomOnly_Checked"   
+                    Style="{StaticResource tgNew}"
+                    Unchecked="ts_IsRomOnly_Unchecked"
+                 />
+            </Grid>
+            <Utilities:Btn x:Name="btn" Content="Btn"/>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="0.2*"/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" x:Name="logImg" 
+                      Stretch="Uniform"
+                      Margin="5"/>
+
+            <MediaElement Grid.Row="1" x:Name="snapVideo" Margin="10,0,0,0"/>
+
+            <Button Grid.Row="2" x:Name="btnLaunch" Style="{StaticResource RoundButton}" 
+                    Content="Launch Game" Click="btnLaunch_Click"/>
+        </Grid>
+    </Grid>
+</UserControl>

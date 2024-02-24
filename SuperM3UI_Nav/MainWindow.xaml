@@ -1,0 +1,138 @@
+﻿<!--/// <Summary>
+    /// Author : R. Arun Mutharasu
+    /// Created :25-08-2022
+    /// YouTube Channel : C# Design Pro
+    /// </Summary>-->
+
+<Window
+    x:Class="SuperM3UI_Nav.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+    xmlns:Menu="clr-namespace:SuperM3UI_Nav.Utilities"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:SuperM3UI_Nav.ViewModel"
+    Title="SuerpM3UI v0.1.0"
+    Width="1000"
+    Height="600"
+    AllowsTransparency="True"
+    Background="Transparent"
+    ResizeMode="NoResize"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
+    MouseLeftButtonDown="Window_MouseLeftButtonDown"
+    mc:Ignorable="d">
+
+    <Window.DataContext>
+        <vm:NavigationVM />
+    </Window.DataContext>
+
+    <Grid>
+        <!--  // Window Border //  -->
+        <Border Background="#212529" CornerRadius="20" />
+        <Grid>
+            <!--  // Base Grid //  -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="170" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!--  // Navigation Panel //  -->
+
+            <Grid HorizontalAlignment="Left">
+
+                <Border Background="#272B2F" CornerRadius="20,0,0,20" />
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Image
+                        Grid.Row="0"
+                        Width="100"
+                        Height="100"
+                        Margin="0,10,0,0"
+                        Source="icons/superm3-logo.png" />
+                    <StackPanel
+                        Grid.Row="1"
+                        Width="228"
+                        Height="500"
+                        VerticalAlignment="Top">
+                        <!--  // Home //  -->
+                        <Menu:Btn
+                            Command="{Binding HomeCommand}"
+                            IsChecked="True"
+                            Style="{StaticResource BtnStyle}">
+                            <Grid>
+                                <Image Source="Images/HomeGreen.png" Style="{StaticResource Image_Style}" />
+                                <TextBlock Style="{StaticResource Text_Style}" Text="Home" />
+                            </Grid>
+                        </Menu:Btn>
+                        <!--  // Video //  -->
+                        <Menu:Btn Command="{Binding VideoCommand}" Style="{StaticResource BtnStyle}">
+                            <Grid>
+                                <Image Source="Images/VideoGreen.png" Style="{StaticResource Image_Style}" />
+                                <TextBlock Style="{StaticResource Text_Style}" Text="Config" />
+                            </Grid>
+
+                        </Menu:Btn>
+
+                        <!--  // Control //  -->
+                        <Menu:Btn Command="{Binding ControlCommand}" Style="{StaticResource BtnStyle}">
+                            <Grid>
+                                <Image Source="Images/ControlGreen.png" Style="{StaticResource Image_Style}" />
+                                <TextBlock Style="{StaticResource Text_Style}" Text="Control" />
+                            </Grid>
+                        </Menu:Btn>
+
+                        <!--  // Test //  -->
+                        <Menu:Btn Command="{Binding TestCommand}" Style="{StaticResource BtnStyle}"  Visibility="Hidden">
+                            <Grid>
+                                <Image Source="Images/TestGreen.png" Style="{StaticResource Image_Style}" />
+                                <TextBlock Style="{StaticResource Text_Style}" Text="Test" />
+                            </Grid>
+                        </Menu:Btn>
+                        
+                        <!--  // Sound //  -->
+                        <Menu:Btn Command="{Binding SoundCommand}" Style="{StaticResource BtnStyle}" Visibility="Hidden">
+                            <Grid>
+                                <Image Source="Images/SoundGreen.png" Style="{StaticResource Image_Style}" />
+                                <TextBlock Style="{StaticResource Text_Style}" Text="Sound" />
+                            </Grid>
+                        </Menu:Btn>
+
+                        <!--  // Network //  -->
+                        <Menu:Btn Command="{Binding NetworkCommand}" Style="{StaticResource BtnStyle}" Visibility="Hidden">
+                            <Grid>
+                                <Image Source="Images/NetworkGreen.png" Style="{StaticResource Image_Style}" />
+                                <TextBlock Style="{StaticResource Text_Style}" Text="Network" />
+                            </Grid>
+                        </Menu:Btn>
+
+                        <!--  // Settings //  -->
+                        <Menu:Btn Command="{Binding SettingsCommand}" Style="{StaticResource BtnStyle}">
+                            <Grid>
+                                <Image Source="Images/img_setting.png" Style="{StaticResource Image_Style}" />
+                                <TextBlock Style="{StaticResource Text_Style}" Text="Settings" />
+                            </Grid>
+                        </Menu:Btn>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <ContentControl
+                    x:Name="Pages"
+                    Margin="10"
+                    Content="{Binding CurrentView}" />
+            </Grid>
+        </Grid>
+
+        <Button
+            x:Name="CloseApp"
+            Click="CloseApp_Click"
+            Style="{StaticResource ExitApp}" />
+    </Grid>
+
+</Window>

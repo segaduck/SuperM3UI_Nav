@@ -1,0 +1,35 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:view="clr-namespace:SuperM3UI_Nav.View"
+    xmlns:vm="clr-namespace:SuperM3UI_Nav.ViewModel">
+
+    <DataTemplate DataType="{x:Type vm:HomeVM}">
+        <view:Home />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:VideoVM}">
+        <view:Video />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:NetworkVM}">
+        <view:Network />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:SettingVM}">
+        <view:Settings />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:TestVM}">
+        <view:Test />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:ControlVM}">
+        <view:Control />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:SoundVM}">
+        <view:Sound />
+    </DataTemplate>
+
+</ResourceDictionary>
