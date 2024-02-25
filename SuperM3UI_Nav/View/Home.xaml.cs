@@ -180,8 +180,8 @@ namespace SuperM3UI_Nav.View
                 {
                     externalProcess.StartInfo.Arguments = "/c supermodel " + filePath;
                     externalProcess.Start();
-                    // 等待外部程式結束
-                    externalProcess.WaitForExit();
+                    //// 等待外部程式結束
+                    //externalProcess.WaitForExit();
                 }
                 else MessageBox.Show("ROM files are not found", "Error");
             }

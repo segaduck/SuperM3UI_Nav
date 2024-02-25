@@ -93,6 +93,8 @@
     <None Remove="NVRAM\spikeofe-master.nv" />
     <None Remove="NVRAM\spikeofe-single.nv" />
     <None Remove="NVRAM\spikeofe-slave.nv" />
+    <None Remove="ReadMe\readme.html" />
+    <None Remove="ReadMe\readme.pdf" />
     <None Remove="resources\m3gameslist - 複製 %282%29.json" />
     <None Remove="resources\m3gameslist - 複製.json" />
     <None Remove="resources\m3gameslist.json" />
@@ -429,6 +431,12 @@
     </Content>
     <Content Include="Images\VideoGreen.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReadMe\readme.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReadMe\readme.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="resources\m3gameslist.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

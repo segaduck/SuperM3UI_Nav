@@ -56,10 +56,8 @@
                 Style="{StaticResource roundComboBox}" />
 
         </Grid>
-        <Grid
-            Name="gdCommon"
-            Grid.Row="2"
-            Visibility="Hidden">
+        <Grid Name="gdCommon" Visibility="Hidden"
+            Grid.Row="2">
             <Canvas>
                 <Rectangle
                     Canvas.Left="0"
@@ -164,10 +162,8 @@
                     Style="{StaticResource inputButton}"/>
             </Canvas>
         </Grid>
-        <Grid
-            Name="gdSpikeout"
-            Grid.Row="2"
-            Visibility="Visible">
+        <Grid Name="gdSpikeout" Visibility="Hidden"
+            Grid.Row="2">
             <Canvas x:Name="myCanvas">
                 <Rectangle
                     Canvas.Left="0"
@@ -281,10 +277,8 @@
                     Style="{StaticResource inputButton}" />
             </Canvas>
         </Grid>
-        <Grid
-            Name="gdFight"
-            Grid.Row="2"
-            Visibility="Hidden">
+        <Grid Name="gdFight" Visibility="Visible"
+            Grid.Row="2">
             <Canvas>
                 <Rectangle
                     Canvas.Left="0"

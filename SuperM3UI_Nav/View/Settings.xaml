@@ -143,32 +143,58 @@
             </Grid.ColumnDefinitions>
             <TextBlock
                 Grid.Column="0"
-                Margin="00,0,0,0"
-                HorizontalAlignment="Center"
+                Margin="60,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Foreground="Gold"
+                FontSize="16"               
+                Style="{StaticResource Text_Toggle}"
+                Text="Version:" />
+            <TextBlock
+                Grid.Column="0"
+                Margin="130,0,0,0"
+                HorizontalAlignment="Left"
                 VerticalAlignment="Center"
                 FontSize="16"
                 Foreground="LightBlue"
                 Style="{StaticResource Text_Toggle}"
-                Text="Version: 0.1.0 Beta " />
+                Text="0.1.1 Beta " />
             <TextBlock
                 Grid.Column="1"
-                Margin="00,0,0,0"
-                HorizontalAlignment="Center"
+                Margin="0,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Foreground="Gold"
+                FontSize="16"               
+                Style="{StaticResource Text_Toggle}"
+                Text="Last Update:" />
+            <TextBlock
+                Grid.Column="1"
+                Margin="105,0,0,0"
+                HorizontalAlignment="Left"
                 VerticalAlignment="Center"
                 FontSize="16"
                 Foreground="LightBlue"
                 Style="{StaticResource Text_Toggle}"
-                Text="Last update: 2024/02/18" />
+                Text="2024/2/26" />
             <TextBlock
                 Grid.Column="2"
-                Margin="10,0,0,0"
-                HorizontalAlignment="Center"
+                Margin="0,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Foreground="Gold"
+                FontSize="16"               
+                Style="{StaticResource Text_Toggle}"
+                Text="Author:" />
+            <TextBlock
+                Grid.Column="2"
+                Margin="65,0,0,0"
+                HorizontalAlignment="Left"
                 VerticalAlignment="Center"
                 FontSize="16"
                 Foreground="LightBlue"
                 Style="{StaticResource Text_Toggle}"
-                Text="Author: Segaduck, Viking254" />
-
+                Text="Segaduck, Viking245" />
         </Grid>
     </Grid>
 </UserControl>

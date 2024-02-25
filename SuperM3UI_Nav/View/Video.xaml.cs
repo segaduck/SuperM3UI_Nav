@@ -463,11 +463,9 @@ namespace SuperM3UI_Nav.View
             {
                 Process externalProcess = new Process();
                 externalProcess.StartInfo.FileName = "cmd.exe";
-                if (HomeVM.SharedDataStore.hideCmd == true)
-                    externalProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-                else externalProcess.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
+                externalProcess.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
                 externalProcess.StartInfo.WorkingDirectory = HomeVM.SharedDataStore.emuDirectory;
-                externalProcess.StartInfo.Arguments = "supermodel "+ HomeVM.SharedDataStore.romDirectory+ ".zip -input-system=xinput";
+                externalProcess.StartInfo.Arguments = "/c supermodel -config-inputs";
                 externalProcess.Start();
                 // 等待外部程式結束
                 externalProcess.WaitForExit();
